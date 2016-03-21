@@ -1,24 +1,24 @@
-\name{primary_package-package}
-\alias{primary_package-package}
-\alias{primary_package}
+\name{primarypackage-package}
+\alias{primarypackage-package}
+\alias{primarypackage}
 \docType{package}
 \title{
-\packageTitle{primary_package}
+\packageTitle{primarypackage}
 }
 \description{
-\packageDescription{primary_package}
+\packageDescription{primarypackage}
 }
 \details{
 
 The DESCRIPTION file:
-\packageDESCRIPTION{primary_package}
-\packageIndices{primary_package}
+\packageDESCRIPTION{primarypackage}
+\packageIndices{primarypackage}
 ~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-\packageAuthor{primary_package}
+\packageAuthor{primarypackage}
 
-Maintainer: \packageMaintainer{primary_package}
+Maintainer: \packageMaintainer{primarypackage}
 }
 \references{
 ~~ Literature or other references for background information ~~

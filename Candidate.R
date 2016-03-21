@@ -1,7 +1,7 @@
 #' A Candidate object 
 #' 
-#' Object of class \code{Candidate} are created by the \code{CreateCandidate} functions
-#'
+#' Object of class \code{Candidate} are created by the \code{CreateCandidate} functionsn. Objects of
+#' this class include \code{show} and \code{print} methods.
 #' 
 #' An object of the class `Candidate' has the following slots:
 #' \itemize{
@@ -12,7 +12,7 @@
 #' }
 #'
 #' @author Mauricio Vela
-#' @aliases Candidate-class initialize,Candidate-method, show,Candidate-method, print,Candidate-method
+#' @aliases Candidate-class initialize,Candidate-method show,Candidate-method
 #' @rdname Candidate-class
 #' @export
 
@@ -68,12 +68,3 @@ setMethod("show", "Candidate",
                "\n Delegates Won: ", object@delegatesWon, "\n Delegates needed: ", object@delegatesNeeded))
     if(class(object)=="Remaining")  cat(paste0("\n remain_prop':\n", object@remain_prop))
 })
-
-#' @export
-
-#Print function
-print.Candidate <- function(object){
-  cat(paste0("Name of the candiate: ", object@name, "\n Party: ", object@party,
-             "\n Delegates Won: ", object@delegatesWon, "\n Delegates needed: ", object@delegatesNeeded))
-  if(class(object)=="Remaining")  cat(paste0("\n remain_prop':\n", object@remain_prop))
-}

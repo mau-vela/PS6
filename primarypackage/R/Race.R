@@ -51,13 +51,13 @@ setMethod("initialize", "Race", function(.Object, Candidates, party){
             .Object@Candidates <- Candidates
             .Object@party <- party
             if(.Object@party=="Republican"){
-              totalWon <- sum(sapply(Race@Candidates, function(x) x@delegatesWon))
+              totalWon <- sum(sapply(.Object@Candidates, function(x) x@delegatesWon))
               .Object@delegatesRemaining <- 2472 - totalWon
               if (.Object@delegatesRemaining<0) stop("The delegates sum is incorrect")
               .Object@delegatesNeeded <- 1237
             }
             if(.Object@party=="Democrat"){
-              totalWon <- sum(sapply(Race@Candidates, function(x) x@delegatesWon))
+              totalWon <- sum(sapply(.Object@Candidates, function(x) x@delegatesWon))
               .Object@delegatesRemaining <- 4765 - totalWon
               if (.Object@delegatesRemaining<0) stop("The delegates sum is incorrect")
               .Object@delegatesNeeded <- 2383

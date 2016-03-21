@@ -7,15 +7,15 @@
 #'
 #' @return An object of class `Candidate' containing
 #' \itemize{
-#' \item name Name of the presidential candidate
-#' \item party Party 
-#' \item delegatesWon Delegates won
-#' \item{delegatesNeeded} Number of delegates needed to obtain a nomination
+#' \item \code{name} Name of the presidential candidate
+#' \item \code{party} Party 
+#' \item \code{delegatesWon} Delegates won
+#' \item \code{delegatesNeeded} Number of delegates needed to obtain a nomination
 #'  }
 #' @author Mauricio Vela
 #' @examples
 #' 
-#' Candidate <-createCandidate("Obama", 100, "Democratic") 
+#' Candidate <-createCandidate("Obama", 100, "Democrat") 
 #' 
 #' @seealso \code{\link{PropNeeded}}, \code{\link{createRace}}
 #' @rdname createCandidate
