@@ -1,0 +1,13 @@
+exportPattern("^[[:alpha:]]+")
+exportMethods(
+    "createCandidate",
+    "createRace",
+    "initialize",
+    "plot",
+    "propNeeded",
+    "show" 
+)
+exportClasses(
+    "Candidate",
+     "Race" 
+)
